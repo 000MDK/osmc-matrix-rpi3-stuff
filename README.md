@@ -3,14 +3,23 @@ osmc-matrix-rpi3-stuff
 collection of configs, commands, addons etc. for OSMC (Matrix) on rpi2
 
 -X11
+
 -SteamLink
+
 -retroarch (with N64)
+
 -squeezelite
+
 -config optimized for stability
+
 -analogue audio output over jack
+
 -all launcher addons updated to work
+
 -quiet boot
+
 -changed splash
+
 -add custom rootca.cert
 
 using X11 script from https://github.com/zjoasan/
