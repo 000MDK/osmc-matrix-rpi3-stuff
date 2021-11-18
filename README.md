@@ -28,13 +28,13 @@ using retropie-script from https://github.com/mcobit/retrosmc/
 
 working already, needs some cleanup and testing for release. Meanwhile I'm waiting for a kernel update, because for now CEC is not working in this setup (steamlink needs fkms).
 
-For a raspi 3B+: If you suffer lag in Kodi, you need to set 'force_turbo=1' in config (voids warranty!) - I had multiple crashes per day with that though, but that was fixed by setting 'core_freq=400'
+For a raspi 3B+: If you suffer lag in Kodi, you need to set `force_turbo=1` in config (voids warranty!) - I had multiple crashes per day with that though, but that was fixed by setting `core_freq=400`
 
-'
+`
 sudo modprobe snd-bcm2835
-'
+`
 
-'
+`
 sudo mkdir /usr/local/share/ca-certificates/extra
 
 sudo cp /home/osmc/cacert.pem /usr/local/share/ca-certificates/extra/root.cert.crt
@@ -48,9 +48,9 @@ sudo chown root:root /usr/share/kodi/system/certs/cacert.pem
 sudo chmod 644 /usr/share/kodi/system/certs/cacert.pem
 
 sudo update-ca-certificates
-'
+`
 
-'
+`
 #needs fixing
 
 sudo apt-get install squeezelite alsa-utils wakeuponlan steamlink wireless-tools v4l-utils setxkbmap xinput retroarch cec-utils squeezelite python3-crypto python3-pip python3-pycryptodome python-crypto-dbg python-crypto-doc python-pip-whl python-pip python-crypto build-essential -y
@@ -58,9 +58,9 @@ sudo apt-get install squeezelite alsa-utils wakeuponlan steamlink wireless-tools
 pip install pycryptodomex
 
 pip install setuptools wheel pycryptodome
-'
+`
 
-'
+`
 wget https://raw.githubusercontent.com/zjoasan/x11-osmc/master/install_x11.sh
 
 chmod +x ./install_x11.sh
@@ -84,5 +84,5 @@ wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.s
 chmod +x install-retrosmc.sh
 
 ./install-retrosmc.sh
-'
+`
 
