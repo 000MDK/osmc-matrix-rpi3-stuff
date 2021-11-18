@@ -1,0 +1,14 @@
+dtparam=audio=on
+cec_osd_name=Kodi
+decode_MPG2=0xaa634e6a  
+decode_WVC1=0x9b3a697  
+hdmi_force_hotplug=1  
+hdmi_group=1  
+hdmi_mode=16  
+dtoverlay=pisound
+audio_pwm_mode=2
+dtoverlay=spi-bcm2835-overlay  
+force_turbo=1
+boot_delay=1
+sdtv_aspect=1  
+core_freq=400
