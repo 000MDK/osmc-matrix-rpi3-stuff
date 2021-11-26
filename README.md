@@ -1,6 +1,5 @@
 # osmc-matrix-rpi3-stuff
-collection of configs, commands, addons etc. for OSMC (Matrix) on rpi2
-
+collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 -X11
 
 -SteamLink
