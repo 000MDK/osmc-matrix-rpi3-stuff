@@ -33,6 +33,11 @@ For a raspi 3B+: If you suffer lag in Kodi, you need to set `force_turbo=1` in c
 sudo modprobe snd-bcm2835
 `
 
+`
+sudo timedatectl set-timezone Your/TZ
+sudo dpkg-reconfigure locales
+`
+
 ```
 sudo mkdir /usr/local/share/ca-certificates/extra
 
