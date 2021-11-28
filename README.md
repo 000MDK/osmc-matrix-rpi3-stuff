@@ -2,9 +2,9 @@
 collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 -X11
 
--SteamLink
+-SteamLink (modified addon from swetoast for x11)
 
--retroarch (with N64)
+-retroarch (with N64 from retrosmc)
 
 -squeezelite
 
