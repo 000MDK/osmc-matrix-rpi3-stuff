@@ -64,10 +64,10 @@ chmod +x ./install_x11.sh
 
 wget https://raw.githubusercontent.com/MarkusLange/VNC-Server-install-script-for-OSMC/master/osmc_vnc_install_cli.bash
 chmod +x osmc_vnc_install_cli.bash
-sudo ./osmc_vnc_install_cli.bash
+#sudo ./osmc_vnc_install_cli.bash
 sudo ./osmc_vnc_install_cli.bash --install-vnc
 sudo ./osmc_vnc_install_cli.bash --activate-service
-sudo ./osmc_vnc_install_cli.bash --start-vnc
+#sudo ./osmc_vnc_install_cli.bash --start-vnc
 
 wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
 chmod +x install-retrosmc.sh
