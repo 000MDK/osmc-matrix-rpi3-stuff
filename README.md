@@ -8,7 +8,7 @@ collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 
 - VNC
 
-- Hyperion-NG
+- Hyperion.NG
 
 - squeezelite
 
@@ -31,6 +31,11 @@ using SteamLink-script from https://github.com/swetoast/steamlink-launcher
 using retropie-script from https://github.com/mcobit/retrosmc/
 
 using netflix-install script from https://github.com/zjoasan/netflix-install-script/
+
+using Hyperion.NG from https://github.com/hyperion-project/hyperion.ng/
+
+using VNC-install script from https://github.com/MarkusLange/VNC-Server-install-script-for-OSMC/
+
 
 working already, needs some cleanup and testing for release - waiting for a kernel update, because for now CEC is not working in this setup (steamlink needs fkms and modified launcher).
 
