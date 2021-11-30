@@ -1,0 +1,15 @@
+[Unit]
+Description=Hyperion ambient light systemd service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/hyperiond
+WorkingDirectory=/usr/local/share/hyperion/bin
+User=osmc
+TimeoutStopSec=5
+KillMode=mixed
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
