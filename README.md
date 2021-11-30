@@ -6,6 +6,10 @@ collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 
 - retroarch (with N64 from retrosmc)
 
+- VNC
+
+- Hyperion-NG
+
 - squeezelite
 
 - config optimized for stability
@@ -59,7 +63,7 @@ sudo update-ca-certificates
 ```
 
 ```
-sudo apt-get install squeezelite alsa-utils wireless-tools v4l-utils xinput retroarch cec-utils squeezelite
+sudo apt-get install squeezelite alsa-utils wireless-tools v4l-utils xinput retroarch cec-utils git cmake build-essential qtbase5-dev libqt5serialport5-dev libusb-1.0-0-dev libturbojpeg0-dev python3-dev libcec-dev libxcb-util0-dev libxcb-randr0-dev libxrandr-dev libxrender-dev libavahi-core-dev libavahi-compat-libdnssd-dev libssl-dev libqt5sql5-sqlite libqt5svg5-dev zlib1g-dev
 ```
 
 ```
@@ -77,6 +81,8 @@ chmod +x osmc_vnc_install_cli.bash
 sudo ./osmc_vnc_install_cli.bash --install-vnc
 sudo ./osmc_vnc_install_cli.bash --activate-service
 #sudo ./osmc_vnc_install_cli.bash --start-vnc
+
+wget -qO- https://raw.githubusercontent.com/hyperion-project/hyperion.ng/master/bin/compile.sh | sh -s hyperion Release install
 
 wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
 chmod +x install-retrosmc.sh
