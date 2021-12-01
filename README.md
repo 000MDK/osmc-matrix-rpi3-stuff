@@ -87,7 +87,9 @@ sudo ./osmc_vnc_install_cli.bash --install-vnc
 sudo ./osmc_vnc_install_cli.bash --activate-service
 #sudo ./osmc_vnc_install_cli.bash --start-vnc
 
-wget -qO- https://raw.githubusercontent.com/hyperion-project/hyperion.ng/master/bin/compile.sh | sh -s hyperion Release install
+#wget -qO- https://raw.githubusercontent.com/hyperion-project/hyperion.ng/master/bin/compile.sh | sh -s hyperion Release install
+wget https://github.com/hyperion-project/hyperion.ng/releases/download/2.0.12/Hyperion-2.0.12-Linux-armv7l.deb
+sudo dpkg -i ./Hyperion-2.0.12-Linux-armv7l.deb
 
 wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
 chmod +x install-retrosmc.sh
