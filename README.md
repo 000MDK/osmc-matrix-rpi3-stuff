@@ -3,7 +3,7 @@
 # osmc-matrix-rpi3-stuff
 collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 
-#2Do: make install script and release
+# 2Do: make install script and release
 
 - X11
 
