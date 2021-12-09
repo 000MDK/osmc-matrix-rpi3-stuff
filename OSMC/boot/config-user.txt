@@ -10,5 +10,9 @@ audio_pwm_mode=2
 dtoverlay=spi-bcm2835-overlay  
 force_turbo=1
 boot_delay=1
-sdtv_aspect=1  
+sdtv_aspect=1
 core_freq=400
+arm_freq=1300
+sdram_freq=450
+over_voltage=2
+
