@@ -42,7 +42,7 @@ using Hyperion.NG from https://github.com/hyperion-project/hyperion.ng/
 using VNC-install script from https://github.com/MarkusLange/VNC-Server-install-script-for-OSMC/
 
 
-working already, needs some cleanup and testing for release - waiting for a kernel update, because for now CEC is not working in this setup (steamlink needs fkms and modified launcher).
+working already, needs some cleanup and testing for release - (News: kernel update did the trick, now we have /dev/cec0)
 
 Note:
 For a raspi 3B+: If you suffer lag in Kodi, you need to set `force_turbo=1` in config (voids warranty!) - I had multiple crashes per day with that though, but that was fixed by setting `core_freq=400`
