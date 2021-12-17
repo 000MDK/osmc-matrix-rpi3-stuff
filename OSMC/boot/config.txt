@@ -3,12 +3,19 @@
 
 # Any changes that you make here will be overwritten as this file is managed by the OSMC via the update system
 
+[pi4]
+dtoverlay=rpivid-v4l2
+arm_64bit=1
+kernel=kernel.img
+
 [all]
-#only really the followoing line needs needs to be changed from kms to fkms, will config-user.txt won' override
 dtoverlay=vc4-fkms-v3d,cma-512
-#standard settings
 disable_overscan=1
 start_x=1
 disable_splash=1
 disable_fw_kms_setup=1
+hdmi_ignore_cec_init=1
 include config-user.txt
+
+[pi02]
+dtoverlay=vc4-fkms-v3d,cma-512
