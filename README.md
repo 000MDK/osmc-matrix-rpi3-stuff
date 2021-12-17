@@ -57,6 +57,10 @@ sudo dpkg-reconfigure locales
 ```
 
 ```
+sudo cp /etc/wpa_supplicant/ifupdown.sh /etc/ifplugd/action.d/ifupdown
+```
+
+```
 sudo mkdir /usr/local/share/ca-certificates/extra
 
 sudo cp /home/osmc/cacert.pem /usr/local/share/ca-certificates/extra/root.cert.crt
@@ -92,14 +96,13 @@ sudo ./osmc_vnc_install_cli.bash --install-vnc
 sudo ./osmc_vnc_install_cli.bash --activate-service
 #sudo ./osmc_vnc_install_cli.bash --start-vnc
 
-#wget -qO- https://raw.githubusercontent.com/hyperion-project/hyperion.ng/master/bin/compile.sh | sh -s hyperion Release install
-wget https://github.com/hyperion-project/hyperion.ng/releases/download/2.0.12/Hyperion-2.0.12-Linux-armv7l.deb
-sudo dpkg -i ./Hyperion-2.0.12-Linux-armv7l.deb
+wget -qO- https://apt.hyperion-project.org/hyperion.pub.key | sudo gpg --dearmor -o /usr/share/keyrings/hyperion.pub.gpg
+echo "deb [signed-by=/usr/share/keyrings/hyperion.pub.gpg] https://apt.hyperion-project.org/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hyperion.list
+sudo apt-get update && sudo apt-get install hyperion
 
 wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
 chmod +x install-retrosmc.sh
 ./install-retrosmc.sh
-
-#missing: copy n64 from retrosmc build to retroarch dir
+sudo ln -s /opt/retropie/configs/all/retroarch /home/osmc/.config/retroarch
 ```
 
