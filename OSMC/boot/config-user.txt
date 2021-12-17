@@ -8,9 +8,13 @@ audio_pwm_mode=2
 dtoverlay=spi-bcm2835-overlay  
 force_turbo=1
 boot_delay=1
-sdtv_aspect=1
+sdtv_aspect=1  
+dtoverlay=vc4-fkms-v3d,cma-512
+disable_overscan=1
+start_x=1  
+disable_splash=1
+disable_fw_kms_setup=1
 core_freq=400
 arm_freq=1350
 sdram_freq=450
 over_voltage=2
-
