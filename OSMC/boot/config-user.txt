@@ -1,7 +1,5 @@
 dtparam=audio=on
 cec_osd_name=Kodi
-decode_MPG2=0xaa634e6a  
-decode_WVC1=0x9b3a697  
 hdmi_force_hotplug=1  
 hdmi_group=1  
 hdmi_mode=16  
@@ -12,7 +10,7 @@ force_turbo=1
 boot_delay=1
 sdtv_aspect=1
 core_freq=400
-arm_freq=1300
+arm_freq=1350
 sdram_freq=450
 over_voltage=2
 
