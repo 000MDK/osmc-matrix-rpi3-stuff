@@ -29,6 +29,9 @@ collection of configs, commands, addons etc. for OSMC (Matrix) on raspi3b+
 
 - add custom rootca.cert
 
+- changed sleeptimer functionality (playback stop) fur unity skin
+
+
 using X11 script from https://github.com/zjoasan/
 
 using SteamLink-script from https://github.com/swetoast/steamlink-launcher
@@ -42,7 +45,9 @@ using Hyperion.NG from https://github.com/hyperion-project/hyperion.ng/
 using VNC-install script from https://github.com/MarkusLange/VNC-Server-install-script-for-OSMC/
 
 
-working already, needs some cleanup and testing for release - cec still not working. investingating.
+working already, needs some cleanup and testing for release - issues:
+- cec still not working. investigating.
+- audio ouput settings refinement needed (steamlink)
 
 Note:
 Optimized for Raspi3B+
