@@ -45,7 +45,7 @@ using VNC-install script from https://github.com/MarkusLange/VNC-Server-install-
 working already, needs some cleanup and testing for release - cec still not working. investingating.
 
 Note:
-For a raspi 3B+: If you suffer lag in Kodi, you need to set `force_turbo=1` in config (voids warranty!) - I had multiple crashes per day with that though, but that was fixed by setting `core_freq=400`
+Optimized for Raspi3B+
 
 `
 sudo modprobe snd-bcm2835
