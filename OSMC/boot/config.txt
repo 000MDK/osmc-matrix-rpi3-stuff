@@ -9,7 +9,7 @@ arm_64bit=1
 kernel=kernel.img
 
 [all]
-dtoverlay=vc4-fkms-v3d,cma-512
+dtoverlay=vc4-fkms-v3d,cma-128
 disable_overscan=1
 start_x=1
 disable_splash=1
@@ -18,4 +18,4 @@ hdmi_ignore_cec_init=1
 include config-user.txt
 
 [pi02]
-dtoverlay=vc4-fkms-v3d,cma-512
+dtoverlay=vc4-fkms-v3d,cma-128
