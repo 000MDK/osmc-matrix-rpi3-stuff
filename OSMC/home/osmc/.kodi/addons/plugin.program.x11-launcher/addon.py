@@ -22,4 +22,4 @@ dialog = xbmcgui.Dialog()
 addon = xbmcaddon.Addon(id='plugin.program.x11-launcher')
 
 output=os.popen("/home/osmc/x11-start/xstart.sh").read()
-
+dialog.ok("Starting X11-Desktop...", output)
